@@ -1,0 +1,2 @@
+from src.coleta_unificada import coletar_indicadores
+from src.salva_sqlite import salvar_em_sqlite
