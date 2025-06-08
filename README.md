@@ -59,7 +59,7 @@ indicadores_financeiros/
 
 🌍 Acesse Online
 
-Indicadores Econômicos - Streamlit App (link público do app)
+Indicadores Econômicos - Streamlit App (https://indicadores-financeiros.streamlit.app/)
 
 📌 Exemplos de Uso
 
