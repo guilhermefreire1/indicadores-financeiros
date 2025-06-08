@@ -1,24 +1,76 @@
-# 📊 Indicadores Econômicos do Brasil
 
-Projeto de engenharia de dados para coletar e visualizar dados da Taxa Selic, usando Python e Streamlit.
+📊 Indicadores Financeiros - Dashboard Interativo com Streamlit
 
-## 🔧 Tecnologias
-- Python
-- API SGS (Banco Central)
-- Pandas, Requests, Streamlit, Plotly
+Este projeto realiza a coleta, tratamento, armazenamento e visualização interativa de indicadores econômicos brasileiros: SELIC, IPCA e Dólar Comercial, utilizando dados reais da API SGS do Banco Central do Brasil.
 
-## ▶️ Execução
+🚀 Funcionalidades
 
-1. Instale as dependências:
+- 🔄 Coleta automática de dados financeiros com requests e pandas
+- 🗂️ Armazenamento local em banco de dados SQLite
+- 📈 Visualização de séries temporais com Plotly
+- 🎛️ Filtros dinâmicos de período e indicadores no dashboard
+- 💡 Resumo estatístico com máximo, mínimo e média
+- 🌐 Deploy no Streamlit Cloud
 
-- pip install -r requirements.txt
+🛠️ Tecnologias Utilizadas
 
-2. Coleta da Selic:
+Python     - Linguagem principal do projeto
+Pandas     - Manipulação e limpeza de dados
+Requests   - Requisição de dados via API
+SQLite     - Armazenamento local
+Streamlit  - Criação do dashboard web
+Plotly     - Gráficos interativos
 
-- python src/coleta_bacen.py
+📁 Estrutura do Projeto
 
-3. Executar a dashboard:
+indicadores_financeiros/
+├── data/
+│   └── indicadores.csv
+├── db/
+│   └── indicadores.db
+├── dashboard/
+│   └── dashboard_indicadores.py
+├── src/
+│   ├── coleta_unificada.py
+│   └── salva_sqlite.py
+├── main.py
+├── requirements.txt
+└── README.txt
 
-- streamlit run dashboard/dashboard_selic.py
+⚙️ Como Executar Localmente
 
+1. Clone o repositório:
+   git clone https://github.com/guilhermefreire1/indicadores-financeiros.git
+   cd indicadores-financeiros
 
+2. Crie um ambiente virtual (opcional):
+   python -m venv .venv
+   .venv\Scripts\activate  # Windows
+   source .venv/bin/activate  # Linux/macOS
+
+3. Instale as dependências:
+   pip install -r requirements.txt
+
+4. Execute o pipeline:
+   python main.py
+
+5. Rode o dashboard:
+   streamlit run dashboard/dashboard_indicadores.py
+
+🌍 Acesse Online
+
+Indicadores Econômicos - Streamlit App (link público do app)
+
+📌 Exemplos de Uso
+
+- Visualizar a evolução histórica da taxa SELIC
+- Comparar o comportamento do IPCA e do Dólar no mesmo período
+- Obter médias e valores máximos/mínimos filtrando por datas
+
+🤝 Contribuição
+
+Contribuições são bem-vindas! Fique à vontade para abrir issues, sugestões ou pull requests.
+
+📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
